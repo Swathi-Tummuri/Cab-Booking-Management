@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\bn_re\Desktop\FSD - Phase3\Course End Project\Cab-Booking Management\Eureka Server"/>
+			<item value="C:\Users\bn_re\Desktop\FSD - Phase3\Course End Project\Cab-Booking Management\Cab Fare Service"/>
+			<item value="C:\Users\bn_re\Desktop\FSD - Phase3\Course End Project\Cab-Booking Management\Booking Cab Service"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

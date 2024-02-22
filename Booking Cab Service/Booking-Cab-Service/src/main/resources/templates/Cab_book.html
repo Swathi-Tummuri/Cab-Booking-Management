@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Cab Booking Management</title>
+</head>
+<body>
+<h2>Fill in the form to Book the Cab</h2>
+<form method="post" action="bookCab">
+
+<label>Customer Name</label>
+<input type="text" name="cname" required/><br/>
+
+<label>Contact Number(ex:09911223344)</label>
+<input type="text" name="cnumber" pattern="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" required/><br/>
+
+<label>Pickup From</label>
+<select name="source" required>
+	<option value="Forrestfield">Forrestfield</option>
+	<option value="Wattlegroove">Wattlegroove</option>
+	<option value="Cannington">Cannington</option>
+	<option value="Harrisdale">Harrisdale</option>
+	<option value="Midland">Midland</option>
+</select>
+<br/>
+
+<label>Destination</label>
+<select name="destination" required>
+	<option value="Forrestfield">Forrestfield</option>
+	<option value="Wattlegroove">Wattlegroove</option>
+	<option value="Cannington">Cannington</option>
+	<option value="Harrisdale">Harrisdale</option>
+	<option value="Midland">Midland</option>
+</select>
+<br/>
+
+<label>Choose Car</label>
+<select name="typeofcab" required>
+	<option value="Toyota">Toyota</option>
+	<option value="Ford">Ford</option>
+	<option value="Mazda">Mazda</option>
+	<option value="NIssan">NIssan</option>
+	<option value="BMW">BMW</option>
+	<option value="Subaru">Subaru</option>
+	<option value="Skoda">Skoda</option>
+</select>
+<br/>
+
+<label>Choose Number Of Seats</label>
+<select name="numberofseats" required>
+	<option value="5">5</option>
+	<option value="7">7</option>
+	<option value="9">9</option>
+	<option value="11">11</option>
+</select>
+<br/>
+
+<label>Choose Date and Time</label>
+<input type="datetime-local" placeholder="select date and time" name="time" required>
+<br/>
+<input type="submit" value="Book Cab!"/>
+<input type="reset" value="Reset"/>
+<br/><br/>
+<a th:href="@{/index}">Home</a>
+</form>
+</body>
+</html>

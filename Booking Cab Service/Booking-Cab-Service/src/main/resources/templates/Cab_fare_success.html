@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Cab Booking Management</title>
+</head>
+<body>
+<h2>Fare details as per your search:</h2>
+<table border=1>
+  <tr>
+    <th>Pickup From</th>
+    <th>To Destination</th>
+    <th>Car Type</th>
+    <th>Number Of Seats</th>
+    <th>Amount</th>
+  </tr>
+  <tr>
+    <td th:text="${bookCab.source}"></td>
+    <td th:text="${bookCab.destination}"></td>
+    <td th:text="${bookCab.typeofcab}"></td>
+    <td th:text="${bookCab.numberofseats}"></td>
+    <td th:text="${bookCab.amount}"></td>
+  </tr>
+</table>
+<br/><br/>
+<a th:href="@{/index}">Home</a>
+</form>
+</body>
+</html>
